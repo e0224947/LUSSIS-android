@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">LUSSIS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email / Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log In</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="confirm_text">Please scan to confirm</string>
+    <string name="title_activity_manage_items">ManageItemsActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="login_forgot"><u>Forgot your password?</u></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_approve">Approve</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_home">Home</string>
+    <string name="action_pending_req">Pending Requisitions</string>
+    <string name="action_mydelegate">My Delegate</string>
+    <string name="empty_pending_req">No pending requisition</string>
+    <string name="hint_name">Employee name</string>
+    <string name="hint_start_date">Select start date</string>
+    <string name="hint_end_date">Select end date</string>
+    <string name="empty_delegate">No Delegate</string>
+    <string name="text_remark">Remark:</string>
+    <string name="txt_reason">Reason</string>
+    <string name="action_newreq">New Requisition</string>
+    <string name="action_myreq">My Requisitions</string>
+    <string name="action_assign">Assign</string>
+    <string name="action_revoke">Revoke</string>
+    <string name="action_update">Update</string>
+    <string name="action_collection">Upcoming Collection</string>
+    <string name="action_scan">Scan to Acknowledge</string>
+    <string name="scan_button_text">Scan to Acknowledge</string>
+    <string name="empty_collection">No Upcoming Collection</string>
+    <string name="date_and_time_text">Date and Time</string>
+    <string name="collection_point_text">Collection Point</string>
+    <string name="empty_my_req">No Requisition</string>
+    <string name="action_disbursement">Disbursement</string>
+    <string name="action_retrieve">Retrieval List</string>
+    <string name="action_stationery">Stationeries</string>
+    <string name="action_generate">Generate Code</string>
+    <string name="empty_disbursement">No Upcoming Disbursement</string>
+
+    <string name="title_activity_stationery_detail">StationeryDetail</string>
+    <string name="item_number">Item Number</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="bin">Bin</string>
+    <string name="current_qty">Current Qty</string>
+    <string name="adjust_stationery_qty">Make an adjustment</string>
+    <string name="department_text">Department</string>
+    <string name="stationery_text">Stationery</string>
+    <string name="qty_to_collect_text">Qty to Collect</string>
+    <string name="empty_retrieval_list">No Retrieval List</string>
+    <string name="employee_text">Employee</string>
+    <string name="start_date_text">Start date</string>
+    <string name="end_date_text">End date</string>
+    <string name="action_adjust">Adjust</string>
+    <string name="add_text">Add</string>
+    <string name="remove_text">Remove</string>
+    <string name="ok_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="action_confirm_received">Confirm received</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_hide">Hide</string>
+    <string name="zero_number">0</string>
+    <string name="location_text">Bin#</string>
+    <string name="text_unit_of_measure">Unit of Measure</string>
+    <string name="reorder_qty">Reorder Qty</string>
+    <string name="reorder_level">Reorder Level</string>
+    <string name="reason_optional_text">Reason (optional)</string>
+    <string name="input_quantity_text">Input quantity</string>
+    <string name="reason_required_text">Reason (required)</string>
+    <string name="hide_text">Hide</string>
+    <string name="show_text">Show</string>
+    <string name="logo_desc">App logo</string>
+    <string name="qr_scan_screen_desc">QR scan screen</string>
+    <string name="disbursment_id_text">Disbursment ID:</string>
+    <string name="empty_text">empty</string>
+    <string name="text_reason">Reason:</string>
+    <string name="one_number">1</string>
+
+    <string-array name="stationery_category">
+        <item>All</item>
+        <item>Clip</item>
+        <item>Envelope</item>
+        <item>Eraser</item>
+        <item>Exercise</item>
+        <item>File</item>
+        <item>Pad</item>
+        <item>Paper</item>
+        <item>Pen</item>
+        <item>Puncher</item>
+        <item>Ruler</item>
+        <item>Scissors</item>
+        <item>Sharpener</item>
+        <item>Shorthand</item>
+        <item>Stapler</item>
+        <item>Tacks</item>
+        <item>Tape</item>
+        <item>Transparency</item>
+        <item>Tray</item>
+    </string-array>
+
+    <string-array name="stationery_unit_of_measure">
+        <item>Box</item>
+        <item>Dozen</item>
+        <item>Each</item>
+        <item>Packet</item>
+        <item>Set</item>
+    </string-array>
+</resources>

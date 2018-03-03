@@ -1,0 +1,61 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stationery_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sa45team7.lussis.ui.mainscreen.StationeriesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/row_margin_end"
+            android:paddingStart="@dimen/row_margin_start"
+            android:paddingTop="@dimen/row_margin_top">
+
+            <TextView
+                style="@style/CategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/row_margin_end"
+                android:text="@string/category"
+                android:textColor="@color/colorWhite" />
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:dropDownSelector="@color/colorWhite"
+                android:dropDownWidth="wrap_content"
+                android:entries="@array/stationery_category"
+                android:popupBackground="@color/colorPrimary" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                style="@style/SearchViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foregroundTint="@color/colorWhite" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stationery_list"
+            android:name="com.sa45team7.lussis.fragments.StationeriesFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/row_stationery" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

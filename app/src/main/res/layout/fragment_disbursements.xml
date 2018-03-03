@@ -1,0 +1,31 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disbursement_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Display2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/empty_disbursement"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/disbursement_list"
+            android:name="com.sa45team7.lussis.fragments.DisbursementsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".ui.mainscreen.DisbursementsFragment"
+            tools:listitem="@layout/row_disbursement" />
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

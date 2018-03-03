@@ -1,0 +1,52 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Android Studio
+.idea/libraries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/runConfigurations.xml
+.idea/*
+*.iml
+
+# Log and profling files
+captures/
+
+# generated files
+bin/
+gen/
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.gradle/*
+.idea/*
+.idea/*/*
+*/build/*
+**/build/*
+.gradle/
+.idea/
+build/

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sa45team7.lussis">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <application
+        android:name=".LUSSISApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.mainscreen.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.detailsscreen.ScanQRActivity"
+            android:label="Scan to Acknowledge"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.mainscreen.BaseActivity" />
+        <activity
+            android:name=".ui.detailsscreen.GenerateQRActivity"
+            android:label="Disbursement Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.mainscreen.BaseActivity" />
+        <activity
+            android:name=".ui.mainscreen.BaseActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.detailsscreen.PendingReqDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.mainscreen.BaseActivity" />
+        <activity
+            android:name=".ui.detailsscreen.StationeryDetailActivity"
+            android:label="Stationery Detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.mainscreen.BaseActivity" />
+        <activity
+            android:name=".ui.detailsscreen.MyReqDetailActivity"
+            android:label="Requisition Detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.mainscreen.BaseActivity"/>
+    </application>
+
+</manifest>
